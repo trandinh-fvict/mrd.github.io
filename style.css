@@ -1,0 +1,104 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0f172a; /* Dark blue background */
+    color: #e2e8f0; /* Light gray text */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #1e293b; /* Slightly lighter card background */
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #f1f5f9;
+}
+
+header h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #94a3b8; /* Lighter text for subtitle */
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #38bdf8; /* Blue accent */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #f1f5f9;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+    align-items: center;
+}
+
+.stat-item {
+    background-color: #0f172a; /* Same as body background for depth */
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stat-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.stat-item.trophy img {
+    width: 100%;
+}
+
+.stat-item.full-width {
+    grid-column: 1 / -1; /* Make streak stats take full width */
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.tools img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.tools img:hover {
+    transform: translateY(-5px);
+}
+
+.support {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.support img {
+    height: 50px;
+    width: auto;
+}
